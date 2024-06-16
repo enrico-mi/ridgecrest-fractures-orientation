@@ -1,0 +1,8 @@
+# Ignore everything in this directory
+*
+# Except this file and subfolder
+!.gitignore
+!angles_analysis/
+
+# This file forces git to keep the empty folder in the repository. The folder
+# itself is needed for the analyses' output.
