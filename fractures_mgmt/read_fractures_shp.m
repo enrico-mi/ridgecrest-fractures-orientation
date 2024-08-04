@@ -1,6 +1,6 @@
 function [ponti_foreshock, ponti_mainshock, varargout] = read_fractures_shp(lon_lims, lat_lims, ver_status)
     
-    filepath = fullfile('shp_files', 'Surface_Rupture_Ridgecrest_Prov_Rel_1.shp');
+    filepath = fullfile('fractures_mgmt', 'shp_files', 'Surface_Rupture_Ridgecrest_Prov_Rel_1.shp');
     
     if (exist('lat_lims','var')) && (~isempty(lat_lims))
         mask = true;
@@ -78,6 +78,5 @@ function [ponti_foreshock, ponti_mainshock, varargout] = read_fractures_shp(lon_
 
     ponti_foreshock = calc_UTM(ponti_foreshock);
     ponti_mainshock = calc_UTM(ponti_mainshock);
-    rodriguez_all = calc_UTM(rodriguez_all);
     
 end

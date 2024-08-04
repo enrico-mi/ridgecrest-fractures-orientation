@@ -1,6 +1,6 @@
 function [tj] = read_tj_shp(lon_lims, lat_lims)
     
-    filepath = fullfile('shp_files', 'Ridgecrest_PreEQ_Features.shp');
+    filepath = fullfile('fractures_mgmt', 'shp_files', 'Ridgecrest_PreEQ_Features.shp');
 
     if (exist('lat_lims','var')) && (~isempty(lat_lims))
         mask = true;
