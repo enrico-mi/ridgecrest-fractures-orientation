@@ -1,6 +1,6 @@
 %% Batch compute of best fits
 
-addpath('./computes');
+addpath( fullfile('.','computes') );
 
 rinit = 1;
 

@@ -1,8 +1,8 @@
 %% Batch compute of error matrices
 
 % runs 100 random realizations to apply random error to original angles
-addpath('./computes');
-addpath('./fractures_mgmt');
+addpath( fullfile('.','computes') );
+addpath( fullfile('.','fractures_mgmt') );
 
 ponti_mechanisms_data = load("ponti_mainshock_NW_mechs.mat");
 mechanisms_data = ponti_mechanisms_data.ponti_mainshock_NW;
@@ -15,7 +15,7 @@ selection.resolution.boolean = false;
 selection.resolution.negative = false;
 selection.method.boolean = false;
 selection.resolution.segments = false;
-mechanisms_data = select_fractures(mechanisms_data,selection,false,false);
+mechanisms_data = select_fractures(mechanisms_data,selection,false);
 
 clearvars ponti_mechanisms_data;
 

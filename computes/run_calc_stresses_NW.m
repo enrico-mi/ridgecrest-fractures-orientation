@@ -15,9 +15,8 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
 
     close all;
     clearvars -except stress_angle string_stress_angle shearFlag;
-    addpath('../computes');
-    addpath('../plots');
-    addpath('./tools');
+    addpath( fullfile('.','computes') );
+    addpath( fullfile('.','plots') );
 
     %% Background stress
     % three quantities are passed:
@@ -140,7 +139,7 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
                 end
                 
                 selection.resolution.ref_length = resolutions(res);
-                selected_fractures = select_fractures(ponti_mainshock_NW,selection,true,false);
+                selected_fractures = select_fractures(ponti_mainshock_NW,selection,true);
                 string_res = num2str(resolutions(res),'%04.f');
                 
                 for mf = 1:length(magn_factors)

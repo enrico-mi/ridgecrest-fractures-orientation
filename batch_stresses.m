@@ -2,7 +2,7 @@
 
 % angles_list: range of angles to investigate in degrees from North (CW positive); for uncertainty analyses with large uncertainty angles, it is recommended to expand the range to -20:35
 
-addpath('./computes');
+addpath( fullfile('.','computes') );
 
 angles_list = -10:1:25;
 

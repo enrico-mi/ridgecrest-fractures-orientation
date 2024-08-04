@@ -1,8 +1,7 @@
 function SRw_plots_magnfactor_NW()
     
-    addpath('../plots');
-    addpath('../computes');
-    addpath('./tools');
+    addpath( fullfile('.','computes') );
+    addpath( fullfile('.','plots') );
     
     close all;
 

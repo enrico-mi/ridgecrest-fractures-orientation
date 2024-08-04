@@ -1,8 +1,8 @@
 %% Batch compute of error matrices (selecting fractures further than 1 or 2km from main fault)
 
 % runs 100 random realizations to apply random error to original angles
-addpath('./computes');
-addpath('./fractures_mgmt');
+addpath( fullfile('.','computes') );
+addpath( fullfile('.','fractures_mgmt') );
 
 rinit = 1;
 
@@ -25,7 +25,7 @@ for l=1:length(distances_from_fault)
     selection.resolution.negative = false;
     selection.method.boolean = false;
     selection.resolution.segments = false;
-    mechanisms_data = select_fractures(mechanisms_data,selection,false,false);
+    mechanisms_data = select_fractures(mechanisms_data,selection,false);
     mechanisms_data = select_by_faultdistance(mechanisms_data,d_from_fault);
 
     clearvars ponti_mechanisms_data;

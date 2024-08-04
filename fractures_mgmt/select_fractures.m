@@ -1,4 +1,4 @@
-function [selected_fractures, flag_fractures] = select_fractures(fractures, selection, flag_compute_angles, flag_plot)
+function [selected_fractures, flag_fractures] = select_fractures(fractures, selection, flag_compute_angles)
 % select fractures read from shp file based on some characteristics
 % fractures: structures of cells containing fractures
 % selection: structure containing information about selection to perform
@@ -57,72 +57,9 @@ function [selected_fractures, flag_fractures] = select_fractures(fractures, sele
         flag_fractures = check_fractures(selected_fractures);
     end
 
-    if flag_plot && flag_fractures
-        plot_fractures(selected_fractures);
-        
-        [string_angles_range, string_resolution, string_verified, string_coseismic, string_method] = selection_string_names(selection_params);
-        
-        if ~selection.resolution.negative
-            figname = "./output/JB2_angles/mu_matrices/" +...
-                      "map" +...
-                      "_angles" + string_angles_range +...
-                      "_res" + string_resolution +...
-                      "_ver" + string_verified +...                      
-                      "_cos" + string_coseismic +...
-                      "_met" + string_method;
-        else
-            figname = "./output/JB2_angles/mu_matrices/" +...
-                      "map" +...
-                      "_angles" + string_angles_range +...
-                      "_resNeg" + string_resolution +...
-                      "_ver" + string_verified +...
-                      "_cos" + string_coseismic +...
-                      "_met" + string_method;;
-        end
-        
-        %savefig(gcf, figname, 'compact');
-        exportgraphics(gcf, figname+".png", 'Resolution', 300);
-        close all;
-        
-    end
-    
     if ~flag_fractures
         warning('Selected subset is empty.');
     end
-end
-
-function plot_fractures(fractures)
-    set(groot,'defaultFigureVisible','off')
-    set(0, 'DefaultFigurePosition', [1921,1,1920,1109]);
-    usamap([35.82 35.94],[-117.74 -117.63]);
-    
-    plot_faulttrace_path = '/home/enricomi/codes/slipmods-plot';
-    path_list = regexp(path,pathsep,'Split');
-    addpath(plot_faulttrace_path);
-    
-    % plotting fault trace
-    x_flt = './fault_trace/s2019RIDGEC02JINx/s2019RIDGEC02JINx.pscmp_';
-    %y_flt = simdata.y_flt;
-    Plot_faulttracem(0,x_flt,  0., 0., 'k', 0.8);
-    %if ischar(y_flt)
-    %    Plot_faulttracem(0,y_flt,  0., 0., ':k', 0.8);
-    %end
-    
-    % plotting fractures
-    for f=1:length(fractures)
-        frac = fractures(f);
-        for m=2:length(frac.UTMx)
-            plotm(frac.Lat(:,m-1:m),frac.Lon(:,m-1:m),'LineWidth',1.6,'Color',colour(1));
-        end
-    end
-    
-    setm(gca,'LabelFormat','none');
-    setm(gca,'PLabelLocation',  35.82:0.03:35.94);
-    setm(gca,'MLabelLocation',-117.74:0.03:-117.63);
-    setm(gca,'PLabelRound',-2);
-    setm(gca,'MLabelRound',-2);    
-    setm(gca,'Grid','off');
-
 end
 
 function flag_fractures = check_fractures(selected_fractures)
