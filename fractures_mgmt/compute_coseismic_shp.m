@@ -8,8 +8,6 @@ function fractures = compute_coseismic_shp(fractures)
     tmp_fractures = calc_center(fractures);
     
     thompsonjobe = read_tj_shp([-117.74 -117.63],[35.82 35.94]); 
-    %thompsonjobe = shaperead('shp_files/Ridgecrest_PreEQ_Features.shp',...
-    %                         'UseGeoCoords',true);
 
     thompsonjobe = calc_UTM(thompsonjobe);
     thompsonjobe = calc_center(thompsonjobe);

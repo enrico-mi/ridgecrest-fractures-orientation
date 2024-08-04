@@ -52,7 +52,7 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
     theta_xy = deg2rad(-(136.89-90)); %136.89 is measured from N
                                       %warning('During visualization phase (e.g. plots for sigma_ij), the frame of reference is rotated by Ridgecrest global strike angle (136.89 deg from N, i.e. ~45 deg clockwise with respect to x-axis).');
 
-    [~, ponti_mainshock_NW, ~] = read_fractures_shp([-117.74 -117.63],[35.82 35.94],'all');
+    [~, ponti_mainshock_NW] = read_fractures_shp([-117.74 -117.63],[35.82 35.94],'all');
 
     % selection needed only for resolutions, but the other "constraints" should
     % be applied in the angles analysis phase

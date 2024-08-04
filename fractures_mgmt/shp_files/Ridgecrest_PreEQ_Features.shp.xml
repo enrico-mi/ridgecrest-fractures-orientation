@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Philibosian, Belle</origin>
+        <origin>Thompson Jobe, Jessica</origin>
+        <origin>Chupik, Colin</origin>
+        <origin>Dawson, Timothy</origin>
+        <origin>Bennett, Scott</origin>
+        <origin>Kendrick, Katherine</origin>
+        <origin>DuRoss, Christopher</origin>
+        <origin>Gold, Ryan</origin>
+        <origin>Ladinsky, Tyler</origin>
+        <origin>Haddon, Elizabeth</origin>
+        <origin>Pierce, Ian</origin>
+        <origin>Swanson, Brian</origin>
+        <origin>Seitz, Gordon</origin>
+        <pubdate>2020</pubdate>
+        <title>Pre-existing features associated with active faulting in the vicinity of the 2019 Ridgecrest, California earthquake sequence</title>
+        <geoform>Two GIS shapefiles</geoform>
+        <pubinfo>
+          <pubplace>Moffett Field, CA</pubplace>
+          <publish>U.S. Geological Survey</publish>
+        </pubinfo>
+        <onlink>https://doi.org/10.5066/P9ENA24Y</onlink>
+        <lworkcit>
+          <citeinfo>
+            <origin>Thompson Jobe, Jessica</origin>
+            <origin>Philibosian, Belle</origin>
+            <origin>Chupik, Colin</origin>
+            <origin>Dawson, Timothy</origin>
+            <origin>Bennett, Scott</origin>
+            <origin>Gold, Ryan</origin>
+            <origin>DuRoss, Christopher</origin>
+            <origin>Ladinsky, Tyler</origin>
+            <origin>Kendrick, Katherine</origin>
+            <origin>Haddon, Elizabeth</origin>
+            <origin>Pierce, Ian</origin>
+            <origin>Swanson, Brian</origin>
+            <origin>Seitz, Gordon</origin>
+            <pubdate>2020</pubdate>
+            <title>Evidence of previous faulting along the 2019 Ridgecrest, California earthquake ruptures</title>
+            <geoform>Journal article presenting and discussing the data</geoform>
+            <pubinfo>
+              <pubplace>Albany, CA</pubplace>
+              <publish>Seismological Society of America</publish>
+            </pubinfo>
+          </citeinfo>
+        </lworkcit>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This dataset is composed of linear active tectonic and other relevant features (scarps, deflected drainages, and lineaments and contrasts in topography, vegetation, and ground color) mapped based on high-resolution topography, aerial/satellite imagery, and field observations.  The mapping covers the area surrounding the 2019 Ridgecrest, California earthquake surface ruptures.  Point locations of field observations are also included.</abstract>
+      <purpose>This project was done in order to improve the previously incomplete active fault mapping in the Ridgecrest area and assess whether the causative faults of the 2019 earthquakes could have been more comprehensively identified prior to the 2019 surface ruptures.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <sngdate>
+          <caldate>2020</caldate>
+        </sngdate>
+      </timeinfo>
+      <current>publication date</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-117.75</westbc>
+        <eastbc>-117.35</eastbc>
+        <northbc>36.0</northbc>
+        <southbc>35.5</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>earthquakes</themekey>
+        <themekey>hazards</themekey>
+        <themekey>geospatial datasets</themekey>
+      </theme>
+      <place>
+        <placekt>GNIS</placekt>
+        <placekey>China Lake</placekey>
+        <placekey>Coso Basin</placekey>
+        <placekey>Indian Wells Valley</placekey>
+        <placekey>Ridgecrest</placekey>
+        <placekey>Salt Wells Valley</placekey>
+        <placekey>Spangler Hills</placekey>
+        <placekey>Teagle Wash</placekey>
+      </place>
+      <temporal>
+        <tempkt>USGS Thesaurus: Time Periods</tempkt>
+        <tempkey>Quaternary</tempkey>
+        <tempkey>Holocene</tempkey>
+      </temporal>
+    </keywords>
+    <accconst>none</accconst>
+    <useconst>none</useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Belle E Philibosian</cntper>
+          <cntorg>SOUTHWEST REGION: EARTHQUAKE SCIENCE CENTER</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2784</cntvoice>
+        <cntemail>bphilibosian@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>U.S. Bureau of Reclamation, California Geological Survey, University of Oxford</datacred>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Attributes of each mapped feature were reviewed for accuracy by at least one coauthor other than the one who initially mapped it.</attraccr>
+    </attracc>
+    <logic>Each mapped feature was reviewed for accuracy by at least one coauthor other than the one who initially mapped it.</logic>
+    <complete>Data set is considered complete for the information presented, as described in the abstract. Users are advised to read the rest of the metadata record carefully for additional details.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>No formal positional accuracy tests were conducted</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>No formal positional accuracy tests were conducted</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>Features were mapped in ArcGIS on top of imagery/topography.</procdesc>
+        <procdate>2020</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <spdoinfo>
+    <indspref>Ridgecrest, Indian Wells Valley, Coso Basin, Salt Wells Valley, Spangler Hills, China Lake, Teagle Wash</indspref>
+    <direct>Vector</direct>
+    <ptvctinf></ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>1.0E-5</latres>
+        <longres>1.0E-5</longres>
+        <geogunit>Decimal degrees</geogunit>
+      </geograph>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Ridgecrest_PreEQ_Features</enttypl>
+        <enttypd>linear active tectonic features</enttypd>
+        <enttypds>Producer-defined</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>FID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Shape</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>ESRI</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FEATURE</attrlabl>
+        <attrdef>Type of mapped feature</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>deflected drainage</edomv>
+            <edomvd>a drainage that has been deflected or offset by lateral motion along a fault</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>scarp</edomv>
+            <edomvd>a linear cliff or slope interrupting topography</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>tonal contrast</edomv>
+            <edomvd>a linear ground color contrast</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>tonal lineament</edomv>
+            <edomvd>a linear streak of ground color</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>topo lineament</edomv>
+            <edomvd>a linear topographic feature</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>vegetation contrast</edomv>
+            <edomvd>a linear contrast in type or density of vegetation</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>vegetation lineament</edomv>
+            <edomvd>a linear strip of vegetation</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>CLASS</attrlabl>
+        <attrdef>Specifies the origin of the mapped feature (neotectonic, non-neotectonic geologic, or artificial), and whether neotectonic features were likely identifiable without the 2019 surface ruptures as a guide.</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <edom>
+            <edomv>[blank]</edomv>
+            <edomvd>active tectonic feature that was likely identifiable without the 2019 surface ruptures</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>subtle</edomv>
+            <edomvd>active tectonic feature that was likely NOT identifiable without the 2019 surface ruptures</edomvd>
+            <edomvds>Producer defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>geologic</edomv>
+            <edomvd>non-active-tectonic geologic feature</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+        <attrdomv>
+          <edom>
+            <edomv>artificial</edomv>
+            <edomvd>human-made feature</edomvd>
+            <edomvds>Producer-defined</edomvds>
+          </edom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>OBSTYPE</attrlabl>
+        <attrdef>Type(s) of data used to observe the feature</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <udom>A list of one to three observation types, which may be "field" (feature observed in the field), "imagery" (feature observed on aerial or satellite imagery), or "2m DEM" (feature observed on the 2-meter digital elevation model).</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>NOTES</attrlabl>
+        <attrdef>Notes about the feature including height and facing direction for scarps, width for vegetation lineaments, description for topo lineaments, and relationship to 2019 surface rupture for all features.</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <udom>Notes about the feature including height and facing direction for scarps, width for vegetation lineaments, description for topo lineaments, and relationship to 2019 surface rupture for all features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>Observer</attrlabl>
+        <attrdef>The person(s) who mapped the feature.</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <udom>Surname(s) or list of initials of person(s) who mapped the feature.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>FieldObs</attrlabl>
+        <attrdef>The person(s) who observed the feature in the field.</attrdef>
+        <attrdefs>Producer-defined</attrdefs>
+        <attrdomv>
+          <udom>Surname(s) or list of initials of person(s) who observed the feature in the field.  If blank, feature was not observed in the field.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey - ScienceBase</cntorg>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data for other purposes, nor on all computer systems, nor shall the act of distribution constitute any such warranty.</distliab>
+    <techpreq>This zip file contains data available in ESRI shapefile format. The user must have software capable of displaying the shapefiles. In lieu of ArcView or ArcGIS, the user may utilize another GIS application package capable of importing the data.</techpreq>
+  </distinfo>
+  <metainfo>
+    <metd>20200420</metd>
+    <metc>
+      <cntinfo>
+        <cntperp>
+          <cntper>Belle E Philibosian</cntper>
+          <cntorg>SOUTHWEST REGION: EARTHQUAKE SCIENCE CENTER</cntorg>
+        </cntperp>
+        <cntpos>Research Geologist</cntpos>
+        <cntaddr>
+          <addrtype>mailing and physical</addrtype>
+          <address>350 North Akron Road</address>
+          <city>Moffett Field</city>
+          <state>CA</state>
+          <postal>94035</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>650-439-2784</cntvoice>
+        <cntemail>bphilibosian@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+  </metainfo>
+</metadata>
