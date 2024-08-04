@@ -29,7 +29,7 @@ Each stage can be run with its corresponding "batch" file:
 
 These files are set up to automatically perform all the analyses at each stage, and _should_ work straight out of the box. To achieve this, all input/output is hardcoded to some degree, and the repository comes with empty folders (`output` and `output/angles_analysis`) where the outputs are stored.
 
-Note that `batch_stresses.m` calls `run_calc_stresses_NW.m`, which computes the stresses at the fractures' centers by adding regional lithostatic stresses to previously computed coseismic stresses. It requires input files for the coseismic stresses, provided in the folder `cs-output`. If you want to use your own stress field, follow the structure of those files. It's a tabular format where each row corresponds to the stress computed at the center point of a given fracture, ordered as in the Ponti et al (2019) shape file. You'll have to replace replace your own filenames in `run_calc_stresses_NW.m`.
+Note that `batch_stresses.m` calls `run_calc_stresses_NW.m`, which computes the stresses at the fractures' centers by adding regional lithostatic stresses to previously computed coseismic stresses. It requires input files for the coseismic stresses, provided in the folder `coseismic-input` (the file names in that folder contains the word output as inherited from previous code). If you want to use your own stress field, follow the structure of those files. It's a tabular format where each row corresponds to the stress computed at the center point of a given fracture, ordered as in the Ponti et al (2019) shape file. You'll have to replace your own file names and paths in `run_calc_stresses_NW.m`.
 
 ###### Plots
 

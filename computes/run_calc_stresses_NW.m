@@ -3,6 +3,7 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
 % stress_angle: regional stress orientation in degrees with respect from North,
 %               positive if clockwise (e.g. stress_angle=5 corresponds to N5E,
 %               -10 to N10W)
+% shearFlag: if true, parametrical study includes different shear moduli
 
     if (~exist('stress_angle','var'))
         stress_angle = 0.;
@@ -43,12 +44,12 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
     sigma_bg = rotate_stress_2D(sigma_xx, sigma_yy, sigma_xy, stress_angle);
     sigma_bg.sigma_zz = sigma_zz;
 
-    %% Slip model J: Jin and Fialko, 2020
+    %% Parametrical study
+
+    magn_factors = 0.:0.1:0.1;
+    resolutions = [0,10];
+
     % Strike = 261.75 ;  Dip = 82.52 ;  Rake = -179.64 ;
-
-    magn_factors = 0.:0.01:0.1;%0.:0.1:1;%[0.2, 0.4, 0.6, 0.8];
-    resolutions = [0,10];%,100,200];
-
     theta_xy = deg2rad(-(136.89-90)); %136.89 is measured from N
                                       %warning('During visualization phase (e.g. plots for sigma_ij), the frame of reference is rotated by Ridgecrest global strike angle (136.89 deg from N, i.e. ~45 deg clockwise with respect to x-axis).');
 
@@ -162,11 +163,11 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
                     if ~(exist(fig_folder, 'dir') == 7)
                         mkdir(fig_folder);
 
-                        filename_output_mains  = char("./cs-output/output2019RIDGEC" + string_mainshock + "_shp_NW_"+string_depth+"m_res"+string_res+"m");
-                        filename_output_fores  = char("./cs-output/output2019RIDGEC" + string_foreshock + "_shp_NW_"+string_depth+"m_res"+string_res+"m");
+                        filename_output_mains  = char("./coseismic-input/output2019RIDGEC" + string_mainshock + "_shp_NW_"+string_depth+"m_res"+string_res+"m");
+                        filename_output_fores  = char("./coseismic-input/output2019RIDGEC" + string_foreshock + "_shp_NW_"+string_depth+"m_res"+string_res+"m");
                         if selection.resolution.negative
-                            filename_output_mains  = char("./cs-output/output2019RIDGEC" + string_mainshock + "_shp_NW_"+string_depth+"m_resNeg"+string_res+"m");
-                            filename_output_fores  = char("./cs-output/output2019RIDGEC" + string_foreshock + "_shp_NW_"+string_depth+"m_resNeg"+string_res+"m");
+                            filename_output_mains  = char("./coseismic-input/output2019RIDGEC" + string_mainshock + "_shp_NW_"+string_depth+"m_resNeg"+string_res+"m");
+                            filename_output_fores  = char("./coseismic-input/output2019RIDGEC" + string_foreshock + "_shp_NW_"+string_depth+"m_resNeg"+string_res+"m");
                         end
                         
                         if sm > 3
