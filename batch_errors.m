@@ -31,7 +31,7 @@ for a=1:length(randangles)
         rmax = 1;
     end
     for sk = 1:length(smallerk)
-        if smaller(sk)
+        if smallerk(sk)
             if ~(randangle==0 || randangle==10)
                 continue
             end

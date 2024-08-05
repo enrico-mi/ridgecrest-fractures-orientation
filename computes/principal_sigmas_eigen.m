@@ -153,7 +153,7 @@ function [sigma_1, sigma_3, theta_1, theta_3, varargout] = principal_sigmas_eige
             end
         end
         
-        warning("Total warnings = " + string(warningc/(xsize*ysize)*100) + "%.");
+        % warning("Total warnings = " + string(warningc/(xsize*ysize)*100) + "%.");
         %varargout{1} = sigma_2;
         %varargout{2} = theta_2;
 

@@ -15,7 +15,7 @@ function mu_matrices_sigma_I_NW(mechanisms_data, realization, randangle, shearFl
         magn_factors = 0.:0.1:1;
     end
     
-    resolutions = [0,10,100];%,200];
+    resolutions = [0,10];
     
     slip_models = ["JB2";"RB2";"XB2"];
     if shearFlag

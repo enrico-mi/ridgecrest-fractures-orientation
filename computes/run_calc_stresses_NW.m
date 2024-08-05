@@ -45,7 +45,8 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
 
     %% Parametrical study
 
-    magn_factors = 0.:0.1:0.1;
+    magn_factors = 0.:0.1:1;
+    % magn_factors = 0.:0.01:0.1; % uncomment this line for high resolution on k
     resolutions = [0,10];
 
     % Strike = 261.75 ;  Dip = 82.52 ;  Rake = -179.64 ;
@@ -135,6 +136,8 @@ function run_calc_stresses_NW(stress_angle,shearFlag)
             for res = 1:length(resolutions)
                 
                 if resolutions(res) > 0 && (sm > 1 || smallerk)
+                    continue
+                elseif resolutions(res) == 0 && (sel==2)
                     continue
                 end
                 
